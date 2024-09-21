@@ -29,7 +29,7 @@ export default function Home() {
           <h2 className="text-2xl">Register as:</h2>
           <div className="flex gap-4">
             <a
-              href="/register?role=refugee"
+              href="/refugee"
               className="bg-green-500 p-4 rounded hover:bg-green-600 transition"
             >
               Register as Refugee

@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* Define color variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,14 +11,46 @@
   }
 }
 
+/* Base styles for the body */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'LondrinaSolid', sans-serif; /* Use LondrinaSolid font globally */
 }
 
+/* Custom Tailwind utility for balanced text */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+/* Font face declarations */
+@font-face {
+  font-family: 'LondrinaSolid';
+  font-weight: 400;
+  src: url('/fonts/LondrinaSolid-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LondrinaSolid';
+  font-weight: 700;
+  src: url('/fonts/LondrinaSolid-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LondrinaSolid';
+  font-weight: 300;
+  src: url('/fonts/LondrinaSolid-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LondrinaSolid';
+  font-weight: 900;
+  src: url('/fonts/LondrinaSolid-Black.ttf') format('truetype');
+}
+
+/* Include Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
