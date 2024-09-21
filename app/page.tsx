@@ -1,76 +1,65 @@
-// app/page.tsx
+// /app/page.tsx
+
+"use client"; // Ensure this component runs on the client side
 
 import React from "react";
 import Image from "next/image";
-import ConnectButton from './ConnectButton';
+import ConnectButton from './ConnectButton'; // Adjust path if necessary
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 p-8 text-white">
-      <header className="mb-8 text-center">
-        <Image
-          className="dark:invert"
-          src="/logo.png" // Use your actual logo path here
-          alt="Refugee Identification System Logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1 className="text-4xl font-bold mt-4">Refugee Identification System</h1>
-        <p className="mt-2 text-lg">
-          Empowering refugees with digital identification via Web3.
-        </p>
+    <div className="relative flex flex-col min-h-screen items-center justify-between bg-cover bg-center" style={{ backgroundImage: `url('/bgHome.gif')` }}>
+      
+      {/* Navigation Bar */}
+      <header className="w-full bg-transparent py-4 relative z-10">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+          {/* Logo */}
+          <div className="flex items-center space-x-3">
+            <a href="/"><Image src="/logo.png" alt="Logo" width={60} height={60} /></a>
+          </div>
+
+          {/* Navigation Links + Connect Wallet */}
+          <nav className="flex items-center space-x-6">
+            <a href="/faq" className="hover:text-gray-500 text-black">FAQ</a>
+            <a href="/contact" className="hover:text-gray-500 text-black">Contact Us</a>
+            <div className="ml-4">
+              <ConnectButton />
+            </div>
+          </nav>
+        </div>
       </header>
 
-      <main className="flex flex-col items-center">
-        <ConnectButton />
+      {/* Main Content */}
+      <main className="flex flex-col items-center justify-center flex-1 text-center z-10">
+        <h1 className="text-4xl font-bold text-black">Refugee Identification System</h1>
+        <p className="text-lg text-black mt-2">Empowering refugees with digital identification via Web3.</p>
 
-        <div className="mt-6 flex flex-col gap-4">
-          <h2 className="text-2xl">Register as:</h2>
-          <div className="flex gap-4">
-            <a
-              href="/refugee"
-              className="bg-green-500 p-4 rounded hover:bg-green-600 transition"
-            >
-              Register as Refugee
-            </a>
-            <a
-              href="/register?role=donor"
-              className="bg-yellow-500 p-4 rounded hover:bg-yellow-600 transition"
-            >
-              Register as Donor
-            </a>
-          </div>
+        <div className="mt-8">
+          {/* <ConnectButton /> */}
         </div>
 
-        <footer className="mt-auto flex gap-4 p-4 bg-black w-full justify-center text-gray-400">
+        <div className="mt-8 flex space-x-4">
           <a
-            className="flex items-center gap-2 hover:underline"
-            href="/faq"
+            href="/refugee"
+            className="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition"
           >
-            <Image
-              src="/icons/faq-icon.svg" // Replace with your FAQ icon
-              alt="FAQ icon"
-              width={16}
-              height={16}
-            />
-            FAQ
+            Register as Refugee
           </a>
           <a
-            className="flex items-center gap-2 hover:underline"
-            href="/contact"
+            href="/donor"
+            className="bg-yellow-500 text-white px-6 py-3 rounded hover:bg-yellow-600 transition"
           >
-            <Image
-              src="/icons/contact-icon.svg" // Replace with your Contact icon
-              alt="Contact icon"
-              width={16}
-              height={16}
-            />
-            Contact Us
+            Become a Donor
           </a>
-        </footer>
+        </div>
       </main>
+
+      {/* Footer */}
+      <footer className="w-full bg-gray-900 py-4 relative z-10">
+        <div className="max-w-7xl mx-auto text-center text-gray-400 font-londrina">
+            Refugee support system by <b>Refuge</b>
+        </div>
+      </footer>
     </div>
   );
 }
-

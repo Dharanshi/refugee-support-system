@@ -4,6 +4,7 @@
 
 import Image from 'next/image';
 import ProfileForm from '../components/ProfileForm';
+import ConnectButton from '../ConnectButton';
 
 export default function RefugeePage() {
   return (
@@ -11,13 +12,20 @@ export default function RefugeePage() {
       {/* Main content */}
       <header className="w-full bg-transparent py-4 relative z-10">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
-          {/* Use Image component for the logo */}
+          {/* Logo */}
           <div className="flex items-center space-x-3">
-            <Image src="/logo.png" alt="Logo" width={60} height={60} />
+            <a href="/"><Image src="/logo.png" alt="Logo" width={60} height={60} /></a>
+            
           </div>
-          <nav className="space-x-4 text-gray-900 font-londrina">
-            <a href="#" className="hover:text-gray-200">FAQ</a>
-            <a href="#" className="hover:text-gray-200">Contact Us</a>
+
+          {/* Navigation Links + Connect Wallet */}
+          <nav className="flex items-center space-x-6">
+            <a href="/" className="hover:text-gray-500 text-black">Home</a> {/* New Home Link */}
+            <a href="/faq" className="hover:text-gray-500 text-black">FAQ</a>
+            <a href="/contact" className="hover:text-gray-500 text-black">Contact Us</a>
+            <div className="ml-4">
+              <ConnectButton />
+            </div>
           </nav>
         </div>
       </header>
