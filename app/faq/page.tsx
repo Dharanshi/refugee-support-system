@@ -52,6 +52,7 @@ export default function FAQPage() {
             <a href="/" className="hover:text-gray-500 text-black font-Minecraftia">Home</a>
               <a href="/refugee" className="hover:text-gray-500 text-black font-Minecraftia">Register as Refugee</a>
               <a href="/donor" className="hover:text-gray-500 text-black font-Minecraftia">Become a Donor</a>
+              <a href="/partner" className="hover:text-gray-500 text-black font-Minecraftia">Partners</a>
               <a href="/contact" className="hover:text-gray-500 text-black font-Minecraftia">Contact Us</a>
               <div className="ml-4">
                 <ConnectButton />

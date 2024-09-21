@@ -32,6 +32,7 @@ export default function DonorPage() {
             <nav className="flex items-center space-x-6">
             <a href="/" className="hover:text-gray-500 text-black font-Minecraftia">Home</a>
               <a href="/refugee" className="hover:text-gray-500 text-black font-Minecraftia">Register as Refugee</a>
+              <a href="/partner" className="hover:text-gray-500 text-black font-Minecraftia">Partners</a>
               <a href="/faq" className="hover:text-gray-500 text-black font-Minecraftia">FAQ</a>
               <a href="/contact" className="hover:text-gray-500 text-black font-Minecraftia">Contact Us</a>
               <div className="ml-4">

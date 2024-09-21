@@ -32,6 +32,8 @@ export default function ContactPage() {
             <a href="/" className="hover:text-gray-500 text-black font-Minecraftia">Home</a>
               <a href="/refugee" className="hover:text-gray-500 text-black font-Minecraftia">Register as Refugee</a>
               <a href="/donor" className="hover:text-gray-500 text-black font-Minecraftia">Become a Donor</a>
+              <a href="/partner" className="hover:text-gray-500 text-black font-Minecraftia">Partners</a>
+
               <a href="/faq" className="hover:text-gray-500 text-black font-Minecraftia">FAQ</a>
               <div className="ml-4">
                 <ConnectButton />
