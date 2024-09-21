@@ -7,9 +7,7 @@ import Head from 'next/head';
 
 export default function Home() {
   return (
-    <>
       <div className="relative flex flex-col min-h-screen items-center justify-between bg-cover bg-center" style={{ backgroundImage: `url('/bgHome.gif')` }}>
-        
         {/* Navigation Bar */}
         <header className="w-full bg-transparent py-4 relative z-10">
           <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
@@ -68,6 +66,5 @@ export default function Home() {
           </div>
         </footer>
       </div>
-    </>
   );
 }
