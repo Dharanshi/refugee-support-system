@@ -20,7 +20,8 @@ export default function RefugeePage() {
 
           {/* Navigation Links + Connect Wallet */}
           <nav className="flex items-center space-x-6">
-            <a href="/" className="hover:text-gray-500 text-black">Home</a> {/* New Home Link */}
+            <a href="/" className="hover:text-gray-500 text-black">Home</a>
+            <a href="/donor" className="hover:text-gray-500 text-black">Become a Donor</a>
             <a href="/faq" className="hover:text-gray-500 text-black">FAQ</a>
             <a href="/contact" className="hover:text-gray-500 text-black">Contact Us</a>
             <div className="ml-4">
@@ -36,7 +37,7 @@ export default function RefugeePage() {
 
       <footer className="w-full bg-gray-900 py-4 relative z-10">
         <div className="max-w-7xl mx-auto text-center text-gray-400 font-londrina">
-            Refugee support system by <b>Refuge</b>
+            Refugee support system by <b>Refuge Link</b>
         </div>
       </footer>
     </div>

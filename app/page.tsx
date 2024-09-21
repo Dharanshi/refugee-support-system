@@ -20,6 +20,8 @@ export default function Home() {
 
           {/* Navigation Links + Connect Wallet */}
           <nav className="flex items-center space-x-6">
+            <a href="/refugee" className="hover:text-gray-500 text-black">Register as Refugee</a>
+            <a href="/donor" className="hover:text-gray-500 text-black">Become a Donor</a>
             <a href="/faq" className="hover:text-gray-500 text-black">FAQ</a>
             <a href="/contact" className="hover:text-gray-500 text-black">Contact Us</a>
             <div className="ml-4">
@@ -31,7 +33,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center flex-1 text-center z-10">
-        <h1 className="text-4xl font-bold text-black">Refuge Link System</h1>
+        <h1 className="text-4xl font-bold text-black">Refuge Link</h1>
         <p className="text-lg text-black mt-2">Transparent, direct donations empowering refugees with stability and trust.</p>
 
         <div className="mt-8">
@@ -57,7 +59,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="w-full bg-gray-900 py-4 relative z-10">
         <div className="max-w-7xl mx-auto text-center text-gray-400 font-londrina">
-            Refugee support system by <b>Refuge</b>
+            Refugee support system by <b>Refuge Link</b>
         </div>
       </footer>
     </div>

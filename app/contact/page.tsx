@@ -30,6 +30,8 @@ export default function ContactPage() {
           {/* Navigation Links + Connect Wallet */}
           <nav className="flex items-center space-x-6">
             <a href="/" className="hover:text-gray-500 text-black">Home</a>
+            <a href="/refugee" className="hover:text-gray-500 text-black">Register as Refugee</a>
+            <a href="/donor" className="hover:text-gray-500 text-black">Become a Donor</a>
             <a href="/faq" className="hover:text-gray-500 text-black">FAQ</a>
             <div className="ml-4">
               <ConnectButton />
@@ -60,7 +62,7 @@ export default function ContactPage() {
       {/* Footer */}
       <footer className="w-full bg-gray-900 py-4 relative z-10">
         <div className="max-w-7xl mx-auto text-center text-gray-400 font-londrina">
-          Refugee support system by <b>Refuge</b>
+          Refugee support system by <b>Refuge Link</b>
         </div>
       </footer>
     </div>
