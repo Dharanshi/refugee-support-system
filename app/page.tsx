@@ -31,8 +31,8 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center flex-1 text-center z-10">
-        <h1 className="text-4xl font-bold text-black">Refugee Identification System</h1>
-        <p className="text-lg text-black mt-2">Empowering refugees with digital identification via Web3.</p>
+        <h1 className="text-4xl font-bold text-black">Refuge Link System</h1>
+        <p className="text-lg text-black mt-2">Transparent, direct donations empowering refugees with stability and trust.</p>
 
         <div className="mt-8">
           {/* <ConnectButton /> */}
