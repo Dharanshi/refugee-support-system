@@ -5,20 +5,18 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    './app/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       fontFamily: {
-        londrina: ['LondrinaSolid', 'sans-serif'],
+        jersey: ['"Jersey10"', 'sans-serif'],  // Custom Jersey10 font
+        Minecraftia: ['"Minecraftia"', 'sans-serif'],  // Custom Jersey10 font
+        pixelify: ['"PixelifySans"', 'sans-serif'],  // Custom PixelifySans font
       },
     },
   },
   plugins: [],
 };
+
 export default config;

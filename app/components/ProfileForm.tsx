@@ -22,17 +22,17 @@ export default function ProfileForm() {
           <input
             type="text"
             placeholder="First Name"
-            className="w-1/2 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="font-pixelify w-1/2 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             type="text"
             placeholder="Last Name"
-            className="w-1/2 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="font-pixelify w-1/2 px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
         {/* File upload section */}
-        <div className="flex flex-col items-center p-4 bg-gray-800 border border-dashed border-gray-700 rounded-lg">
+        <div className="flex flex-col items-center p-4 bg-gray-800 border border-dashed border-gray-700 rounded-lg font-pixelify">
           <div className="flex items-center space-x-4">
             <input
               type="file"
@@ -69,7 +69,7 @@ export default function ProfileForm() {
           {/* Login Now button */}
           <button
             type="submit"
-            className="flex items-center px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600"
+            className="flex items-center px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 font-pixelify"
           >
             Login Now
             <span className="ml-2">➤</span>

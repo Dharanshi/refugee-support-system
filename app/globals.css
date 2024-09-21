@@ -15,41 +15,47 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'LondrinaSolid', sans-serif; /* Use LondrinaSolid font globally */
+  font-family: 'LondrinaSolid', sans-serif; /* Default global font */
 }
 
-/* Custom Tailwind utility for balanced text */
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-/* Font face declarations */
+/* Base styles */
 @font-face {
-  font-family: 'LondrinaSolid';
+  font-family: 'Jersey10';
   font-weight: 400;
-  src: url('/fonts/LondrinaSolid-Regular.ttf') format('truetype');
+  src: url('./fonts/Jersey10-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'LondrinaSolid';
+  font-family: 'PixelifySans';
+  font-weight: 400;
+  src: url('./fonts/PixelifySans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  font-weight: 500;
+  src: url('./fonts/PixelifySans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  font-weight: 600;
+  src: url('./fonts/PixelifySans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PixelifySans';
   font-weight: 700;
-  src: url('/fonts/LondrinaSolid-Bold.ttf') format('truetype');
+  src: url('./fonts/PixelifySans-Bold.ttf') format('truetype');
 }
-
 @font-face {
-  font-family: 'LondrinaSolid';
-  font-weight: 300;
-  src: url('/fonts/LondrinaSolid-Light.ttf') format('truetype');
+  font-family: 'Minecraftia';
+  src: url('./fonts/Minecraftia-Regular.ttf') format('truetype');
 }
-
-@font-face {
-  font-family: 'LondrinaSolid';
-  font-weight: 900;
-  src: url('/fonts/LondrinaSolid-Black.ttf') format('truetype');
+/* Apply default body font if needed */
+body {
+  font-family: 'PixelifySans', sans-serif;
 }
-
 /* Include Tailwind's base styles */
 @tailwind base;
 @tailwind components;

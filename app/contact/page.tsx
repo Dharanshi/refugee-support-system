@@ -21,38 +21,38 @@ export default function ContactPage() {
       
       {/* Navigation Bar */}
       <header className="w-full bg-transparent py-4 relative z-10">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-          <a href="/"><Image src="/logo.png" alt="Logo" width={60} height={60} /></a>
-          </div>
-
-          {/* Navigation Links + Connect Wallet */}
-          <nav className="flex items-center space-x-6">
-            <a href="/" className="hover:text-gray-500 text-black">Home</a>
-            <a href="/refugee" className="hover:text-gray-500 text-black">Register as Refugee</a>
-            <a href="/donor" className="hover:text-gray-500 text-black">Become a Donor</a>
-            <a href="/faq" className="hover:text-gray-500 text-black">FAQ</a>
-            <div className="ml-4">
-              <ConnectButton />
+          <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+            {/* Logo */}
+            <div className="flex items-center space-x-3">
+              <a href="/"><Image src="/logo.png" alt="Logo" width={60} height={60} /></a>
             </div>
-          </nav>
-        </div>
-      </header>
+
+            {/* Navigation Links + Connect Wallet */}
+            <nav className="flex items-center space-x-6">
+            <a href="/" className="hover:text-gray-500 text-black font-Minecraftia">Home</a>
+              <a href="/refugee" className="hover:text-gray-500 text-black font-Minecraftia">Register as Refugee</a>
+              <a href="/donor" className="hover:text-gray-500 text-black font-Minecraftia">Become a Donor</a>
+              <a href="/faq" className="hover:text-gray-500 text-black font-Minecraftia">FAQ</a>
+              <div className="ml-4">
+                <ConnectButton />
+              </div>
+            </nav>
+          </div>
+        </header>
 
       {/* Contact Us Section */}
       <main className="flex flex-col items-center justify-center flex-1 text-center relative z-10 text-black">
         <header className="mb-8 text-center">
-          <h1 className="text-3xl font-bold">Contact Us</h1>
-          <p className="mt-2 text-lg">You can reach us via the email below.</p>
+          <h1 className="text-5xl font-bold font-jersey">Contact Us</h1>
+          <p className="mt-2 text-3xl font-pixelify">You can reach us via the email below.</p>
         </header>
 
         {/* Email Display and Copy Button */}
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg text-white">
+        <div className="bg-gray-900 p-6 rounded-lg shadow-lg text-white font-pixelify">
           <p className="text-xl mb-4">{email}</p>
           <button
             onClick={copyEmail}
-            className="bg-blue-500 px-6 py-2 rounded-md hover:bg-blue-600 transition"
+            className="bg-blue-500 px-6 py-2 rounded-md hover:bg-blue-600 transition font-pixelify"
           >
             {copied ? "Email Copied!" : "Copy Email"}
           </button>
@@ -61,10 +61,10 @@ export default function ContactPage() {
 
       {/* Footer */}
       <footer className="w-full bg-gray-900 py-4 relative z-10">
-        <div className="max-w-7xl mx-auto text-center text-gray-400 font-londrina">
-          Refugee support system by <b>Refuge Link</b>
-        </div>
-      </footer>
+          <div className="max-w-7xl mx-auto text-center text-gray-400 font-pixelify">
+            Refugee support system by <b>Refuge Link</b> <br />Powered by <b>Noun</b>
+          </div>
+        </footer>
     </div>
   );
 }

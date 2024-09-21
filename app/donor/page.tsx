@@ -22,31 +22,31 @@ export default function DonorPage() {
       
       {/* Navigation Bar */}
       <header className="w-full bg-transparent py-4 relative z-10">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-          <a href="/"><Image src="/logo.png" alt="Logo" width={60} height={60} /></a>
-          </div>
-
-          {/* Navigation Links + Connect Wallet */}
-          <nav className="flex items-center space-x-6">
-            <a href="/" className="hover:text-gray-500 text-black">Home</a>
-            <a href="/refugee" className="hover:text-gray-500 text-black">Register as Refugee</a>
-            <a href="#" className="hover:text-gray-500 text-black">FAQ</a>
-            <a href="#" className="hover:text-gray-500 text-black">Contact Us</a>
-            <div className="ml-4">
-              <ConnectButton />
+          <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+            {/* Logo */}
+            <div className="flex items-center space-x-3">
+              <a href="/"><Image src="/logo.png" alt="Logo" width={60} height={60} /></a>
             </div>
-          </nav>
-        </div>
-      </header>
+
+            {/* Navigation Links + Connect Wallet */}
+            <nav className="flex items-center space-x-6">
+            <a href="/" className="hover:text-gray-500 text-black font-Minecraftia">Home</a>
+              <a href="/refugee" className="hover:text-gray-500 text-black font-Minecraftia">Register as Refugee</a>
+              <a href="/faq" className="hover:text-gray-500 text-black font-Minecraftia">FAQ</a>
+              <a href="/contact" className="hover:text-gray-500 text-black font-Minecraftia">Contact Us</a>
+              <div className="ml-4">
+                <ConnectButton />
+              </div>
+            </nav>
+          </div>
+        </header>
 
       {/* Main Content */}
       <main className="flex flex-col items-center justify-center flex-1 text-center relative z-10 text-black">
         {/* Donation Input Section */}
         <header className="mb-8 text-center">
-          <h1 className="text-3xl font-bold">Support Refugees</h1>
-          <p className="mt-2 text-lg">Enter an amount and donate to the cause.</p>
+          <h1 className="font-bold font-jersey text-5xl">Support Refugees</h1>
+          <p className="mt-2 font-pixelify text-2xl">Enter an amount and donate to the cause.</p>
         </header>
 
         {/* Donation Input */}
@@ -54,16 +54,16 @@ export default function DonorPage() {
           <input
             type="number"
             placeholder="Enter Amount"
-            className="px-4 py-2 text-black rounded-md border border-gray-400"
+            className="px-4 py-2 text-black rounded-md border border-gray-400 font-pixelify"
           />
-          <button className="bg-yellow-500 px-6 py-2 rounded-md hover:bg-yellow-600 transition">
+          <button className="bg-yellow-500 px-6 py-2 rounded-md hover:bg-yellow-600 transition font-pixelify">
             Donate Now
           </button>
         </div>
 
         {/* Transaction Table */}
-        <div className="w-full max-w-lg bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h2 className="text-xl mb-4 text-white">People Contributed so far</h2>
+        <div className="w-full max-w-lg bg-gray-900 p-6 rounded-lg shadow-lg font-pixelify">
+          <h2 className="text-xl mb-4 text-white ">People Contributed so far</h2>
           <div className="bg-gray-800 text-white rounded-lg overflow-hidden">
             <table className="table-auto w-full">
               <thead>
@@ -87,10 +87,10 @@ export default function DonorPage() {
 
       {/* Footer */}
       <footer className="w-full bg-gray-900 py-4 relative z-10">
-        <div className="max-w-7xl mx-auto text-center text-gray-400 font-londrina">
-          Refugee support system by <b>Refuge Link</b>
-        </div>
-      </footer>
+          <div className="max-w-7xl mx-auto text-center text-gray-400 font-pixelify">
+            Refugee support system by <b>Refuge Link</b> <br />Powered by <b>Noun</b>
+          </div>
+        </footer>
     </div>
   );
 }
