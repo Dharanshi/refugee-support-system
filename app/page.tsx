@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import ConnectButton from './ConnectButton';
-import Head from 'next/head';
 
 export default function Home() {
   return (
