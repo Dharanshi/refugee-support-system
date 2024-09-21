@@ -8,13 +8,13 @@ import ConnectButton from '../ConnectButton';
 
 export default function DonorPage() {
   const transactions = [
-    { id: "TX1234567890", amount: "$100" },
-    { id: "TX1234567891", amount: "$150" },
-    { id: "TX1234567892", amount: "$200" },
-    { id: "TX1234567893", amount: "$50" },
-    { id: "TX1234567894", amount: "$75" },
-    { id: "TX1234567895", amount: "$300" },
-    { id: "TX1234567896", amount: "$90" },
+    { id: "TX1234567890", amount: "100 USDC" },
+    { id: "TX1234567891", amount: "150 USDC" },
+    { id: "TX1234567892", amount: "200 USDC" },
+    { id: "TX1234567893", amount: "50 USDC" },
+    { id: "TX1234567894", amount: "75 USDC" },
+    { id: "TX1234567895", amount: "300 USDC" },
+    { id: "TX1234567896", amount: "90 USDC" },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function DonorPage() {
         {/* Donation Input Section */}
         <header className="mb-8 text-center">
           <h1 className="font-bold font-jersey text-5xl">Support Refugees</h1>
-          <p className="mt-2 font-pixelify text-2xl">Enter an amount and donate to the cause.</p>
+          <p className="mt-2 font-pixelify text-2xl">Enter an amount (<b>Minimum 5 USDC</b>) and donate to the cause.</p>
         </header>
 
         {/* Donation Input */}
