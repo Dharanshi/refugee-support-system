@@ -6,7 +6,6 @@ export default function ProfileForm() {
   const [file, setFile] = useState<File | null>(null);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false); // For form submission state
   const [showPopup, setShowPopup] = useState(false); // For showing the popup
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
