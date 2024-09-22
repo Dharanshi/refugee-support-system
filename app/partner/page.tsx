@@ -74,7 +74,7 @@ export default function PartnersPage() {
       {/* Footer */}
       <footer className="w-full bg-gray-900 py-4 relative z-10">
         <div className="max-w-7xl mx-auto text-center text-gray-400 font-pixelify">
-          Refugee support system by <b>Refuge Link</b> <br />Powered by <b>Noun</b>
+          Refugee support system by <b>Refuge Link</b> <br />Powered by <b>Nouns</b>
         </div>
       </footer>
     </div>
